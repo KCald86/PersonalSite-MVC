@@ -1,0 +1,102 @@
+﻿
+@{
+    ViewData["Title"] = "About";
+}
+
+<main class="site-wrapper">
+    <div class="pt-table">
+        <div class="pt-tablecell page-about relative">
+            <!-- .close -->
+            <a href="@Url.Action("Index", "Home")" class="page-close"><i class="tf-ion-close"></i></a>
+            <!-- /.close -->
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
+                        <div class="page-title text-center">
+                            <h2>About <span class="primary">me</span> <span class="title-bg">Kurtis</span></h2>
+                            <p>I came to Centriq only seeing HTML and CSS briefly for a semester back in highschool. Learning computer languages and coding felt like they were out of my reach before, but now after getting my hands in the code while learning I wish I could have done this 15 years ago. Getting my hands dirty in code and finding a way to put in just a about anything I can think up have been a real blast through this journey. I've always had a real love for games in all forms. I am an extremely patient person who has developed amazing people skills through over a decade in nursing. I love to learn and develop new skills and I can't wait to see where full-stack development will take me.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-md-6">
+                        <div class="about-author">
+                            <figure class="author-thumb">
+                                <img src="~/images/0X0A6508.jpg" alt="A picture of me">
+                            </figure> <!-- /.author-bio -->
+                            <div class="author-desc">
+                                <p><b>Date of birth:</b> 25th november, 1986</p>
+                                <p><b>Expert in:</b> Working on it...</p>
+                                
+                            </div>
+                            <!-- /.author-desc -->
+                        </div> <!-- /.about-author -->
+                        <p>"I really loved working with SQL in the back-end, but seeing full-stack integration through MVC and React I've really come to enjoy the whole process" - me</p>
+                    </div> <!-- /.col -->
+
+                    <div class="col-xs-12 col-md-6">
+                        <div class="section-title clear">
+                            <h3>Skills Aquired</h3>
+                        </div>
+                        <div class="skill-wrapper">
+                            <div class="progress clear">
+                                <div class="skill-name">HTML/CSS</div>
+                                <div class="skill-bar">
+                                    <div class="bar"></div>
+                                </div>
+                                <div class="skill-lavel" data-skill-value="100%"></div>
+                            </div> <!-- /.progress -->
+                            <div class="progress clear">
+                                <div class="skill-name">JavaScript</div>
+                                <div class="skill-bar">
+                                    <div class="bar"></div>
+                                </div>
+                                <div class="skill-lavel" data-skill-value="100%"></div>
+                            </div> <!-- /.progress -->
+                            <div class="progress clear">
+                                <div class="skill-name">C#</div>
+                                <div class="skill-bar">
+                                    <div class="bar"></div>
+                                </div>
+                                <div class="skill-lavel" data-skill-value="100%"></div>
+                            </div> <!-- /.progress -->
+                            <div class="progress clear">
+                                <div class="skill-name">SQL Database</div>
+                                <div class="skill-bar">
+                                    <div class="bar"></div>
+                                </div>
+                                <div class="skill-lavel" data-skill-value="100%"></div>
+                            </div> <!-- /.progress -->
+                            <div class="progress clear">
+                                <div class="skill-name">MVC</div>
+                                <div class="skill-bar">
+                                    <div class="bar"></div>
+                                </div>
+                                <div class="skill-lavel" data-skill-value="100%"></div>
+                            </div> <!-- /.progress -->
+                            <div class="progress clear">
+                                <div class="skill-name">React</div>
+                                <div class="skill-bar">
+                                    <div class="bar"></div>
+                                </div>
+                                <div class="skill-lavel" data-skill-value="100%"></div>
+                            </div> <!-- /.progress -->
+                        </div> <!-- /.skill-wrapper -->
+                    </div> <!-- /.col -->
+                </div> <!-- /.row -->
+            </div> <!-- /.container -->
+
+            <nav class="page-nav clear">
+                <div class="container">
+                    <div class="flex flex-middle space-between">
+                        <span class="prev-page"><a href="@Url.Action("Welcome", "Home")" class="link">&larr; Prev Page</a></span>
+                        <span class="copyright">Copyright &copy; @DateTime.Now.Year, Designed &amp; Developed by <a href="https://themefisher.com/">Themefisher</a>.</span>
+                        <span class="next-page"><a href="@Url.Action("Recognition", "Home")" class="link">Next Page &rarr;</a></span>
+                    </div>
+                </div>
+                <!-- /.page-nav -->
+            </nav>
+            <!-- /.container -->
+        </div> <!-- /.pt-tablecell -->
+    </div> <!-- /.pt-table -->
+</main> <!-- /.site-wrapper -->

@@ -1,0 +1,157 @@
+﻿
+@{
+    ViewData["Title"] = "Resume";
+}
+
+<main class="site-wrapper">
+    <div class="pt-table">
+        <div class="pt-tablecell page-resume relative">
+            <!-- .close -->
+            <a href="@Url.Action("Index", "Home")" class="page-close"><i class="tf-ion-close"></i></a>
+            <!-- /.close -->
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
+                        <div class="page-title text-center">
+                            <h2>My <span class="primary">Experience</span> <span class="title-bg">Resume</span></h2>
+                        </div>
+                        <br/>
+                        <nav class="text-center page-nav clear">
+                            <div>
+                                <h3>
+                                    <button class="btn btn-danger ">
+                                    <a href="~/images/KurtisCaldwell_Resume.pdf" target="_blank">Download Resume</a>
+                                    </button>
+                                </h3>
+                            </div>
+                        </nav>
+                    </div>
+                </div> <!-- /.row -->
+                    <div class="row">
+                        <img class="column" style="width:fit-content" src="~/images/resumeSnap.jpg" />
+                       @* <img class="column" src="~/images/resumeSnap1.jpg"/>
+                        <img class="column" src="~/images/resumeSnap2.jpg"/>*@
+                    </div>
+                    <div class="column">
+                    </div>
+
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="history-block">
+                            <div class="section-title light clear">
+                                <h3>Education</h3>
+                            </div>
+                            <!-- /.section-title -->
+                            <div class="history-scroller">
+                                <div class="history-item">
+                                    <div class="history-icon">
+                                        <span class="history-hex"></span>
+                                        <i class="tf-documents5"></i>
+                                    </div>
+                                    <div class="history-text">
+                                        <h5>Centriq</h5>
+                                        <span>2022</span>
+                                        <p>FullStack WebDevelopment</p>
+                                    </div>
+                                </div>
+                                <!-- /.history-item -->
+                                <div class="history-item">
+                                    <div class="history-icon">
+                                        <span class="history-hex"></span>
+                                        <i class="tf-documents5"></i>
+                                    </div>
+                                    <div class="history-text">
+                                        <h5>Metropolitan Community College</h5>
+                                        <span>2006-2010</span>
+                                        <p>Associate in Arts</p>
+                                    </div>
+                                </div>
+                                <!-- /.history-item -->
+                                <div class="history-item">
+                                    <div class="history-icon">
+                                        <span class="history-hex"></span>
+                                        <i class="tf-documents5"></i>
+                                    </div>
+                                    <div class="history-text">
+                                        <h5>Lee's Summit North Highschool</h5>
+                                        <span>2005</span>
+                                        <p>Graduated</p>
+                                    </div>
+                                </div>
+
+                                <!-- /.history-item -->
+                            </div>
+                        </div> <!-- /.history-block -->
+                    </div> <!-- /.col -->
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="history-block">
+                            <div class="section-title light clear">
+                                <h3>Work History</h3>
+                            </div>
+                            <!-- /.section-title -->
+                            <div class="history-scroller">
+                                <div class="history-item">
+                                    <div class="history-icon">
+                                        <span class="history-hex" style="align-items:star"></span>
+                                        <i class="tf-documents5"></i>
+                                    </div>
+                                    <div class="history-text">
+                                        <h5>Wilshire at Lakewood Rehab Center</h5>
+                                        <span>2011 - 2022</span>
+                                        <p> 
+                                          600 NE Meadowview Dr,<br/> Lee's Summit, MO 64064 <br/>
+                                          (816) 554-9866<br/>
+                                          11.5 work experience<br/>
+                                          Translatable skills:<br/>
+                                          - Attention to Detail &ensp;
+                                          - Analytical Thinking<br/>
+                                          - Inovation &ensp;
+                                          - Leadership &ensp;
+                                          - Persistence<br/>
+                                          - Adaptability/Flexibility &ensp;
+                                          - Initiative &ensp;
+                                          - Patience
+                                        </p>
+                                        
+                                    </div>
+                                </div>
+                                <!-- /.history-item -->
+                                @*<div class="history-item">
+                                    <div class="history-icon">
+                                        <span class="history-hex"></span>
+                                        <i class="tf-documents5"></i>
+                                    </div>
+                                    <div class="history-text">
+                                        <h5>extra</h5>
+                                        <span>extra</span>
+                                        <p>
+                                            Fill out space with transferable<br>
+                                            skills here or by filling out above
+                                        </p>
+                                    </div>
+                                </div>*@
+                                <!-- /.history-item -->
+                            </div>
+                        </div> <!-- /.history-block -->
+                    </div> <!-- /.col -->
+                </div> <!-- /.row -->
+            </div> <!-- /.container -->
+           
+
+            <nav class="page-nav clear">
+                <div class="container">
+                    <div class="flex flex-middle space-between">
+                        <span class="prev-page"><a href="@Url.Action("Recognition", "Home")" class="link">&larr; Prev Page</a></span>
+                        <span class="copyright">Copyright &copy; @DateTime.Now.Year, Designed &amp; Developed by <a href="https://themefisher.com/">Themefisher</a>.</span>
+                        <span class="next-page"><a href="@Url.Action("Portfolio", "Home")" class="link">Next Page &rarr;</a></span>
+                    </div>
+                </div>
+                <!-- /.page-nav -->
+            </nav>
+            <!-- /.container -->
+
+        </div> <!-- /.pt-tablecell -->
+    </div> <!-- /.pt-table -->
+</main> <!-- /.site-wrapper -->
+

@@ -1,0 +1,106 @@
+﻿@{
+    ViewData["Title"] = "Portfolio";
+}
+
+<main class="site-wrapper">
+    <div class="pt-table">
+        <div class="pt-tablecell page-works relative">
+            <!-- .close -->
+            <a href="@Url.Action("Index", "Home")" class="page-close"><i class="tf-ion-close"></i></a>
+            <!-- /.close -->
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
+                        <div class="page-title text-center">
+                            <h2>My <span class="primary">Projects</span> <span class="title-bg">works</span></h2>
+                            <p>Projects that I have been working on. Links to them are below, inside the figures.</p>
+                        </div>
+                    </div>
+                </div> <!-- /.row -->
+                <!-- Change the data filters to project types that I'll be working with, that way I can add more projects that I work on. -->
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <ul class="filter list-inline">
+                            <li><a href="#" class="active" data-filter="*">All</a></li>
+                            <li><a href="#" data-filter=".C">C#</a></li>
+                            <li><a href="#" data-filter=".ReactJS">ReactJS</a></li>
+                            <li><a href="#" data-filter=".MVC">MVC</a></li>
+                            @*<li><a href="#" data-filter=".Artworks">Artworks</a></li>*@
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row isotope-gutter">
+                    <div class="col-xs-12 col-sm-6 col-md-4 C">
+                        <figure class="works-item">
+                            <img src="~/images/works/dungeon1.jpg" alt="Dungeon">
+                            <div class="overlay"></div>
+                            <figcaption class="works-inner">
+                                <h4>Dungeon App</h4>
+                                <a href="https://github.com/KCald86/Dungeon-Application" target="_blank" class="link">See if you can survive the Ogre's wrath!</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 C# MVC">
+                        <figure class="works-item">
+                            <img src="~/images/works/burgerStoreFront.jpg" alt="Burger">
+                            <div class="overlay"></div>
+                            <figcaption class="works-inner">
+                                <h4>StoreFront</h4>
+                                <a href="https://github.com/KCald86/Dungeon-Application" target="_blank" class="link">Order from the best burger spot in town!</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 ReactJS">
+                        <figure class="works-item">
+                            <img src="~/images/works/react.jpg" alt="React Hooks">
+                            <div class="overlay"></div>
+                            <figcaption class="works-inner">
+                                <h4>ToDo App</h4>
+                                <a href="https://github.com/KCald86/Dungeon-Application" target="_blank" class="link">Get Organized</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 MVC C#">
+                        <figure class="works-item">
+                            <img src="~/images/works/ferenc-almasi-c8h0n7fSTqs-unsplash.jpg" alt="React Application">
+                            <div class="overlay"></div>
+                            <figcaption class="works-inner">
+                                <h4>Web API</h4>
+                                <a href="https://github.com/KCald86/Dungeon-Application" target="_blank" class="link">Back-end for React and a Weather forcast</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    @*<div class="col-xs-12 col-sm-6 col-md-4 Photoshop">
+                        <figure class="works-item">
+                            <img src="images/works/5.jpg" alt="">
+                            <div class="overlay"></div>
+                            <figcaption class="works-inner">
+                                <h4>Project Name</h4>
+                                <p>Text, if I need it</p>
+                            </figcaption>
+                        </figure>
+                    </div>*@
+                </div> <!-- /.row -->
+            </div> <!-- /.container -->
+            <div>
+                <br />
+                <br />
+            </div>
+            <nav class="page-nav clear">
+                <div class="container">
+                    <div class="flex flex-middle space-between">
+                        <span class="prev-page"><a href="@Url.Action("Resume", "Home")" class="link">&larr; Prev Page</a></span>
+                        <span class="copyright">Copyright &copy; @DateTime.Now.Year, Designed &amp; Developed by <a href="https://themefisher.com/">Themefisher</a>.</span>
+                        <span class="next-page"><a href="@Url.Action("Links", "Home")" class="link">Next Page &rarr;</a></span>
+                    </div>
+                </div>
+                <!-- /.page-nav -->
+            </nav>
+            <!-- /.container -->
+
+        </div> <!-- /.pt-tablecell -->
+    </div> <!-- /.pt-table -->
+</main> <!-- /.site-wrapper -->

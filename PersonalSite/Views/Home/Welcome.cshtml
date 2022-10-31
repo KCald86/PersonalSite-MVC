@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewData["Title"] = "Welcome";
+}
+
+<main class="site-wrapper">
+    <div class="pt-table">
+        <div class="pt-tablecell page-welcome relative">
+            <!-- .close -->
+            <a href="@Url.Action("Index", "Home")" class="page-close">
+                <i class="tf-ion-close"></i>
+                </a>
+            <!-- /.close -->
+
+            <div class="author-image-large">
+                <img src="~/images/Kurtis.jpeg" alt="Photo of me arms crossed">
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6 col-lg-7">
+                        <div class="page-title">
+                            <h2>Kurtis <span class="primary">Caldwell</span> <span class="title-bg">About</span></h2>
+                            <p style="padding-right: 10.5em; color:black;"> I'm a Lee's Summit native who has lived in the Kansas City metro area my whole life. I've loved playing around with computers and electronics since I was a kid. The last 11 and a half years I've worked in the healthcare field as a CNA providing care primarily for the elderly. After over a decade of hard work and personal development I am making a huge pivot in my life by following my passion for solving problems and trying to code the wild things my mind can come up with. </p>
+                        </div>
+                    </div>
+                </div> <!-- /.row -->
+            </div> <!-- /.container -->
+            
+            <nav class="page-nav clear" style="color:black">
+                <div class="container">
+                    <div class="flex flex-middle space-between">
+                        <span class="prev-page"><a href="@Url.Action("Index", "Home")" class="link">&larr; Prev Page</a></span>
+                        <span class="copyright">Copyright &copy; @DateTime.Now.Year, Designed &amp; Developed by <a href="https://themefisher.com/">Themefisher</a>.</span>
+                        <span class="next-page"><a href="@Url.Action("About", "Home")" class="link">Next Page &rarr;</a></span>
+                    </div>
+                </div>
+                <!-- /.page-nav -->
+            </nav>
+            <!-- /.container -->
+
+        </div> <!-- /.pt-tablecell -->
+    </div> <!-- /.pt-table -->
+</main> <!-- /.site-wrapper -->
+

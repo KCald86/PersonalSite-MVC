@@ -1,0 +1,77 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\_Archive\about.html" />
+    <None Include="wwwroot\_Archive\contact.html" />
+    <None Include="wwwroot\_Archive\css\colors\blue.css" />
+    <None Include="wwwroot\_Archive\css\colors\blue.css.map" />
+    <None Include="wwwroot\_Archive\css\colors\green.css" />
+    <None Include="wwwroot\_Archive\css\colors\green.css.map" />
+    <None Include="wwwroot\_Archive\css\colors\red.css" />
+    <None Include="wwwroot\_Archive\css\colors\red.css.map" />
+    <None Include="wwwroot\_Archive\css\colors\yellow.css" />
+    <None Include="wwwroot\_Archive\css\colors\yellow.css.map" />
+    <None Include="wwwroot\_Archive\css\dark.css" />
+    <None Include="wwwroot\_Archive\css\dark.css.map" />
+    <None Include="wwwroot\_Archive\css\style.css" />
+    <None Include="wwwroot\_Archive\css\style.css.map" />
+    <None Include="wwwroot\_Archive\favicon.ico" />
+    <None Include="wwwroot\_Archive\images\0X0A6416.jpg" />
+    <None Include="wwwroot\_Archive\images\0X0A6508.jpg" />
+    <None Include="wwwroot\_Archive\images\Brittany.jpg" />
+    <None Include="wwwroot\_Archive\images\Casey.jpg" />
+    <None Include="wwwroot\_Archive\images\favicon.png" />
+    <None Include="wwwroot\_Archive\images\John.jpg" />
+    <None Include="wwwroot\_Archive\images\Kurtis.jpeg" />
+    <None Include="wwwroot\_Archive\images\MissingHeadshot.jpg" />
+    <None Include="wwwroot\_Archive\images\Paige.jpg" />
+    <None Include="wwwroot\_Archive\images\Sean.jpg" />
+    <None Include="wwwroot\_Archive\images\Storm.jpg" />
+    <None Include="wwwroot\_Archive\images\Tanner.JPG" />
+    <None Include="wwwroot\_Archive\images\works\1.jpg" />
+    <None Include="wwwroot\_Archive\images\works\2.jpg" />
+    <None Include="wwwroot\_Archive\images\works\3.jpg" />
+    <None Include="wwwroot\_Archive\images\works\4.jpg" />
+    <None Include="wwwroot\_Archive\images\works\5.jpg" />
+    <None Include="wwwroot\_Archive\images\Zach.jpg" />
+    <None Include="wwwroot\_Archive\index.html" />
+    <None Include="wwwroot\_Archive\js\script.js" />
+    <None Include="wwwroot\_Archive\links.html" />
+    <None Include="wwwroot\_Archive\plugins\animate.css" />
+    <None Include="wwwroot\_Archive\plugins\bootstrap\bootstrap.min.css" />
+    <None Include="wwwroot\_Archive\plugins\bootstrap\bootstrap.min.js" />
+    <None Include="wwwroot\_Archive\plugins\isotope\isotope.pkgd.min.js" />
+    <None Include="wwwroot\_Archive\plugins\jquery-2.2.4.min.js" />
+    <None Include="wwwroot\_Archive\plugins\jquery.nicescroll.min.js" />
+    <None Include="wwwroot\_Archive\plugins\slick\ajax-loader.gif" />
+    <None Include="wwwroot\_Archive\plugins\slick\fonts\slick.eot" />
+    <None Include="wwwroot\_Archive\plugins\slick\fonts\slick.svg" />
+    <None Include="wwwroot\_Archive\plugins\slick\fonts\slick.ttf" />
+    <None Include="wwwroot\_Archive\plugins\slick\fonts\slick.woff" />
+    <None Include="wwwroot\_Archive\plugins\slick\README.markdown" />
+    <None Include="wwwroot\_Archive\plugins\slick\slick-theme.css" />
+    <None Include="wwwroot\_Archive\plugins\slick\slick.css" />
+    <None Include="wwwroot\_Archive\plugins\slick\slick.min.js" />
+    <None Include="wwwroot\_Archive\plugins\themefisher-fonts\css\themefisher-fonts.min.css" />
+    <None Include="wwwroot\_Archive\plugins\themefisher-fonts\fonts\themefisher-font.eot" />
+    <None Include="wwwroot\_Archive\plugins\themefisher-fonts\fonts\themefisher-font.svg" />
+    <None Include="wwwroot\_Archive\plugins\themefisher-fonts\fonts\themefisher-font.ttf" />
+    <None Include="wwwroot\_Archive\plugins\themefisher-fonts\fonts\themefisher-font.woff" />
+    <None Include="wwwroot\_Archive\portfolio.html" />
+    <None Include="wwwroot\_Archive\recognition.html" />
+    <None Include="wwwroot\_Archive\resume.html" />
+    <None Include="wwwroot\_Archive\welcome.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.10" />
+    <PackageReference Include="NETCore.MailKit" Version="2.1.0" />
+  </ItemGroup>
+
+</Project>

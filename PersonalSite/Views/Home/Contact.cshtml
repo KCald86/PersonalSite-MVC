@@ -1,0 +1,188 @@
+﻿@model PersonalSite.Models.ContactViewModel
+
+@{
+    ViewData["Title"] = "Contact";
+}
+
+<main class="site-wrapper">
+    <div class="pt-table">
+        <div class="pt-tablecell page-contact relative">
+            <!-- .close -->
+            <a href="@Url.Action("Index", "Home")" class="page-close"><i class="tf-ion-close"></i></a>
+            <!-- /.close -->
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
+                        <div class="page-title text-center">
+                            <h2>Get in <span class="primary">touch</span> <span class="title-bg">Contact</span></h2>
+                            <p>Looking forward to expanding my connections. Reach out to me with any inquiries you may have.</p>
+                        </div>
+                    </div>
+                </div> <!-- /.row -->
+
+                <div class="row">
+                    <div class="col-xs-12 col-sm-5 col-md-4 col-lg-3">
+                        <div class="contact-block">
+                            <div class="media">
+                                <div class="media-left">
+                                    <i class="tf-envelope2"></i>
+                                </div>
+                                <div class="media-body">
+                                    <h4>Email</h4>
+                                    <p><a href="mailto:KCaldwell86@outlook.com" style="color:crimson">My Email</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.contact-block -->
+                        @*<div class="contact-block">
+                            <div class="media">
+                                <div class="media-left">
+                                    <i class="tf-phone2"></i>
+                                </div>
+                                <div class="media-body">
+                                    <h4>Phone</h4>
+                                    <p>Contact me or download my Resume</p>
+                                </div>
+                            </div>
+                        </div>*@
+                        <!-- /.contact-block -->
+                        @*<div class="contact-block">
+                            <div class="media">
+                                <div class="media-left">
+                                    <i class="tf-mobile"></i>
+                                </div>
+                                <div class="media-body">
+                                    <h4>LinkedIn</h4>
+                                    <p><a href="https://www.linkedin.com/in/kurtis-caldwell-b212bb24b/" class="" target="_blank">Connect</a></p>
+                                </div>
+                            </div>
+                        </div>*@
+                        <!-- /.contact-block -->
+
+                        <ul class="contact-social">
+                            <li>
+                                <span class="contact-social-hex"></span>
+                                <a href="https://www.linkedin.com/in/kurtis-caldwell-b212bb24b/"><i class="tf-ion-social-linkedin"></i></a>
+                            </li>
+                            <li>
+                                <span class="contact-social-hex"></span>
+                                <a href="https://github.com/KCald86"><i class="tf-ion-social-github"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-7 col-md-7 col-md-offset-1 col-lg-offset-2">
+                        <div class="section-title clear">
+                            <h3>Send me a message</h3>
+                            <span class="bar-dark"></span>
+                            <span class="bar-primary"></span>
+                        </div>
+
+                        
+                        <form asp-action="Contact" id="contact-form" class="row contact-form no-gutter">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <div class="col-xs-12 col-sm-6">
+                                <div class="input-field name">
+                                    <span class="input-icon" id="name"><i class="tf-profile-male"></i></span>
+                                    <input asp-for="Name" type="text" class="form-control" placeholder="Enter your name" required>
+                                    <span asp-validation-for="Name" class="text-danger"></span>
+                                </div>
+                            </div> <!-- ./col- -->
+                            <div class="col-xs-12 col-sm-6">
+                                <div class="input-field email">
+                                    <span class="input-icon" id="email"><i class="tf-envelope2"></i></span>
+                                    <input asp-for="Email" type="email" class="form-control" name="email" placeholder="Your email address" required>
+                                    <span asp-validation-for="Email" class="text-danger"></span>
+                                </div>
+                            </div> <!-- ./col- -->
+                            <div class="col-xs-12 col-sm-12">
+                                <div class="input-field">
+                                    <span class="input-icon" id="subject"><i class="tf-pricetags"></i></span>
+                                    <input asp-for="Subject" type="text" class="form-control" name="subject" placeholder="Enter the discussion title" required>
+                                    <span asp-validation-for="Subject" classclass="text-danger"></span>
+                                </div>
+                            </div> <!-- ./col- -->
+                            <div class="col-xs-12 col-sm-12">
+                                <div class="input-field message">
+                                    <span class="input-icon"><i class="tf-pencil2"></i></span>
+                                    <textarea asp-for="Message" name="message" id="message" class="form-control"
+                                              placeholder="Write your message" required></textarea>
+                                    <span asp-validation-for="Message" class="text-danger"></span>
+                                </div>
+                            </div> <!-- ./col- -->
+                            <div class="col-xs-12 col-sm-12">
+                                <div class="input-field">
+                                    <span class="btn-border">
+                                        <button type="submit" class="btn btn-primary btn-custom-border text-uppercase">
+                                            Send Message
+                                            now
+                                        </button>
+                                    </span>
+                                </div>
+                                <div class="msg-success">Your Message was sent successfully</div>
+                                <div class="msg-failed">Something went wrong, please try again later</div>
+                            </div> <!-- ./col- -->
+                        </form> <!-- /.row -->
+                    </div> <!-- /.col- -->
+                </div> <!-- /.row -->
+            </div> <!-- /.container -->
+
+            <nav class="page-nav clear">
+                <div class="container">
+                    <div class="flex flex-middle space-between">
+                        <span class="prev-page"><a href="@Url.Action("Links", "Home")" class="link">&larr; Prev Page</a></span>
+                        <span class="copyright">Copyright &copy; @DateTime.Now.Year, Designed &amp; Developed by <a href="https://themefisher.com/">Themefisher</a>.</span>
+                    </div>
+                </div>
+                <!-- /.page-nav -->
+            </nav>
+
+            <!-- /.container -->
+
+        </div> <!-- /.pt-tablecell -->
+    </div> <!-- /.pt-table -->
+</main> <!-- /.site-wrapper -->
+
+
+@*<h2>Contact</h2>
+
+<h4>ContactViewModel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Contact">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Subject" class="control-label"></label>
+                <input asp-for="Subject" class="form-control" />
+                <span asp-validation-for="Subject" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Message" class="control-label"></label>
+                <textarea asp-for="Message" class="form-control"></textarea>
+                <span asp-validation-for="Message" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>*@
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
